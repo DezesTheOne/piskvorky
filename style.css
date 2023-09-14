@@ -1,0 +1,49 @@
+html {
+  background-image: linear-gradient(to bottom, #615dad, #ffc8da);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 30%
+}
+
+.obrazek {
+  flex: 1;
+}
+
+@font-face {
+  font-family: lobster;
+  src: url("font/Lobster-Regular.ttf");
+}
+
+.text {
+  text-align: center;
+  background-color: #283e50;
+  flex: 1;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: lobster;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+.button1 {
+  background-color: #1fcca4;
+  color: #ffffff;
+  border: none;
+}
+
+.button2 {
+  background-color: #0197f6;
+  color: #ffffff;
+  border: none;
+}
