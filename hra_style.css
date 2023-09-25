@@ -5,6 +5,14 @@ html {
   padding: 0;
 }
 
+body {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -29,7 +37,7 @@ h1 {
 .podnadpisem {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   height: fit-content;
 }
 
@@ -38,6 +46,7 @@ h1 {
   flex-direction: row;
   justify-content: flex-start;
   gap: 5px;
+  padding-left: 20px;
 }
 
 p {
@@ -56,6 +65,7 @@ p {
   flex-direction: row;
   justify-content: flex-end;
   gap: 5px;
+  padding-right: 20px;
 }
 
 .home {
@@ -65,20 +75,28 @@ p {
   padding: 5px;
 }
 
+.home:hover {
+ background-color: #1cbb96;
+}
+
 .restart {
   border: 2px solid #0197f6;
   background-color: #0197f6;
   border-radius: 3px;
+  padding: 5px;
+}
+
+.restart:hover {
+background-color: #0090e9;
 }
 
 table {
   display: table;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 20px;
-  border-spacing: 0px;
+  border-collapse: collapse;
 }
 
 tr {
@@ -89,6 +107,16 @@ tr {
 td {
   /* display: flex; */
   display: table-cell;
-  border: 1px solid black;
+  border: 2px solid black;
+  padding: 0;
+}
+
+.cell{
+  border: none;
+  background-color: #e2bdee;
   padding: 1rem;
+}
+
+.cell:hover{
+  background-color: #f6daff;
 }
