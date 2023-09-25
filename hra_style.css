@@ -1,0 +1,94 @@
+html {
+  background-image: linear-gradient(to bottom, #615dad, #ffc8da);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  max-width: 80vmin;
+}
+
+@font-face {
+  font-family: lobster;
+  src: url("font/Lobster-Regular.ttf");
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: lobster;
+  font-size: 3rem;
+}
+
+.podnadpisem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: fit-content;
+}
+
+.hraje {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+p {
+  display: flex;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.kolecko {}
+
+.homearestart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.home {
+  border: 2px solid #1fcca4;
+  background-color: #1fcca4;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.restart {
+  border: 2px solid #0197f6;
+  background-color: #0197f6;
+  border-radius: 3px;
+}
+
+table {
+  display: table;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-spacing: 0px;
+}
+
+tr {
+  display: flex;
+  display: table-row;
+}
+
+td {
+  /* display: flex; */
+  display: table-cell;
+  border: 1px solid black;
+  padding: 1rem;
+}
