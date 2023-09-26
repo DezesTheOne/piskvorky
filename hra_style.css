@@ -16,7 +16,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   max-width: 80vmin;
 }
 
@@ -113,10 +113,10 @@ td {
 
 .cell{
   border: none;
-  background-color: #e2bdee;
+  background-color: #e2bdee69;
   padding: 1rem;
 }
 
 .cell:hover{
-  background-color: #f6daff;
+  background-color: #f6e1fd8c;
 }
