@@ -12,11 +12,18 @@ const bunka9 = document.querySelector('td:nth-child(9) button');
 const bunka10 = document.querySelector('td:nth-child(10) button');
 
 const kliknuti = (udalost) => {
-  udalost.target.classList.add('cerne_kolecko');
-  if (currentPlayer === true)
+  const bunka = udalost.target;
 
+  if (
+    !bunka.classList.contains('cerne_kolecko') &&
+    !bunka.classList.contains('cerny_krizek')
+  ) {
+    bunka.classList.add(currentPlayer);
 
-  
+    currentPlayer =
+      currentPlayer === 'cerne_kolecko' ? 'cerny_krizek' : 'cerne_kolecko';
+  }
+};
 
 bunka1.addEventListener('click', kliknuti);
 bunka2.addEventListener('click', kliknuti);
