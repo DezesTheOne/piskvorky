@@ -37,7 +37,7 @@ h1 {
 .podnadpisem {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   height: fit-content;
   padding-bottom: 20px;
 }
@@ -45,9 +45,9 @@ h1 {
 .hraje {
   display: flex;
   flex-direction: row;
-  justify-content:flex-start;
+  justify-content: flex-start;
   gap: 5px;
-  
+
 }
 
 p {
@@ -76,7 +76,7 @@ p {
 }
 
 .home:hover {
- background-color: #1cbb96;
+  background-color: #1cbb96;
 }
 
 .restart {
@@ -87,7 +87,7 @@ p {
 }
 
 .restart:hover {
-background-color: #0090e9;
+  background-color: #0090e9;
 }
 
 table {
@@ -105,18 +105,29 @@ tr {
 }
 
 td {
-  /* display: flex; */
+  display: flex;
   display: table-cell;
   border: 2px solid black;
   padding: 0;
 }
 
-.cell{
+.cerne_kolecko {
+  background-image: url(podklady/circle.svg);
+  background-size: cover;
+}
+
+.cerny_krizek {
+  background-image: url(podklady/cross.svg);
+  background-size: cover;
+}
+
+.cell {
+  display: flex;
   border: none;
   background-color: #e2bdee69;
   padding: 1rem;
 }
 
-.cell:hover{
+.cell:hover {
   background-color: #f6e1fd8c;
 }
