@@ -111,12 +111,16 @@ td {
 
 .cerne_kolecko {
   background-image: url(podklady/circle.svg);
-  background-size: cover;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cerny_krizek {
   background-image: url(podklady/cross.svg);
-  background-size: cover;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cell {
