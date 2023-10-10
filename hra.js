@@ -1,37 +1,11 @@
-let currentPlayer = 'cerne_kolecko';
+const policka = document.querySelectorAll('.cell');
+let symbol = 'cerny_krizek';
 
-const bunka1 = document.querySelector('td:nth-child(1) button');
-const bunka2 = document.querySelector('td:nth-child(2) button');
-const bunka3 = document.querySelector('td:nth-child(3) button');
-const bunka4 = document.querySelector('td:nth-child(4) button');
-const bunka5 = document.querySelector('td:nth-child(5) button');
-const bunka6 = document.querySelector('td:nth-child(6) button');
-const bunka7 = document.querySelector('td:nth-child(7) button');
-const bunka8 = document.querySelector('td:nth-child(8) button');
-const bunka9 = document.querySelector('td:nth-child(9) button');
-const bunka10 = document.querySelector('td:nth-child(10) button');
-
-const kliknuti = (udalost) => {
-  const bunka = udalost.target;
-
-  if (
-    !bunka.classList.contains('cerne_kolecko') &&
-    !bunka.classList.contains('cerny_krizek')
-  ) {
-    bunka.classList.add(currentPlayer);
-
-    currentPlayer =
-      currentPlayer === 'cerne_kolecko' ? 'cerny_krizek' : 'cerne_kolecko';
-  }
-};
-
-bunka1.addEventListener('click', kliknuti);
-bunka2.addEventListener('click', kliknuti);
-bunka3.addEventListener('click', kliknuti);
-bunka4.addEventListener('click', kliknuti);
-bunka5.addEventListener('click', kliknuti);
-bunka6.addEventListener('click', kliknuti);
-bunka7.addEventListener('click', kliknuti);
-bunka8.addEventListener('click', kliknuti);
-bunka9.addEventListener('click', kliknuti);
-bunka10.addEventListener('click', kliknuti);
+policka.forEach((pole) => {
+  pole.addEventListener('click', () => {
+    if (pole.textContent === '') {
+      pole.classList.add(symbol);
+      symbol = symbol === 'cerny_krizek' ? 'cerne_kolecko' : 'cerny_krizek';
+    }
+  });
+});
